@@ -83,8 +83,7 @@
 
 //3
 
-// function nums(num1){
-// var numbers=[5,4,6,2,4,7,8,111,25];
+// function nums(num1,numbers=[]){
 // for(var i=0;i<numbers.length;i++){
 //     if(num1==numbers[i]){
 //         return console.log(true);
@@ -95,7 +94,7 @@
 // }
 // }
 
-// nums(45);
+// nums(45[4,7,8,45,78]);
 
 //4
 // var counter=0;
@@ -169,7 +168,7 @@
 // }
 
 
-// min([11,22,2,4,8,9,3,44,22]);
+// min([11,22,6,2,4,8,-1,9,3,44,22]);
 
 //9
 // function sumOfArayy(x=[]){
@@ -205,24 +204,152 @@
 //  minmax([5,4,3,8,7,55,2]);
 //11
 
-function evenbig(x=[]){
-    var max=0;
- for(var i=0;i<x.length;i++){
-if(x[i]%2==0){
-    console.log(x[i])
+// function evenbig(x=[]){
+//     var max=0;
+//     var index=0;
+//  for(var i=0;i<x.length;i++){
+// if(x[i]%2==0){
+//     console.log(x[i])
 
-    if(x[i]>max){
-        max=x[i];
-    }
-}
- }
- console.log(max);
-}
+//     if(x[i]>max){
+//         max=x[i];
+//         var index=i
+//     }
+// }
+//  }
+//  console.log(max,index);
+// }
 
 
-evenbig([1,7,8,55,12,6]);
+// evenbig([1,7,8,55,57,12,6]);
+
+//12
+// function notEvenSum(x=[]){
+// var sum=0;
+//     for(var i=0;i<x.length;i++){
+
+//         if(x[i]%2==1){
+// sum+=x[i];
+//         }
+//     }
+// console.log(sum)
+// return sum;
+
+// }
+
+// notEvenSum([1,7,9,22,12,8]);
+
+//13
+
+// function names(name,x=[]){
+
+//   x.push(name)  
+
+//   console.log(x)
+// }
+
+// names("znavo",["yossi","avi","natan"]);
+
+//14
 
 
+// function emails(email,x=[]){
+
+//     x.unshift(email);
+
+//     console.log(x);
+
+
+
+// }
+
+// emails("znavo@gmail.com",["yara@gmail.com","roman@gmail.com","yosii@gmail.com","avi@gmail.com"]);
+
+15//
+
+// function numbers(num,x=[]){
+
+// if(num%2==0){
+// x.unshift(num);
+// }
+// else{
+//     x.push(num);
+// }
+    
+
+//     console.log(x);
+// }
+
+
+// numbers(12,[1,2,7,8,9,6,4,2,3]);
+
+//16
+
+// function removnum(num,x=[]){
+// var tr;
+// for(var i=0;i<x.length;i++){
+
+//     if(num==x[i])
+//     {
+//         x.splice(i,1)
+//         tr=1;
+//         i--;
+//     }
+
+// }
+
+// if(tr!=1){
+//     x.push(num);
+// }
+
+// if(tr){
+    
+// }
+
+
+// console.log(x)
+
+// }
+//  removnum(6,[1,2,7,8,9,6,4,2,3]);
+
+//17
+
+// function bignumber(num,x=[]){
+// var tr;
+//     for(var i=0;i<x.length;i++){
+//      if(num>x[i]){
+// tr=1;
+
+//      }
+//     }
+// if(tr==1)
+// {
+//     x.unshift(num)
+
+// }
+// else
+// x.push(num);
+
+//     console.log(x);
+// }
+
+// bignumber(1,[1,2,7,8,9,6,4,2,3]);
+
+//18
+ 
+// function removNum(num,x=[]){
+
+//     for(var i=0;i<x.length;i++){
+//         if(x.length>num){
+//             if(num==x[i]){
+//                 x.splice(num,1)
+//             }
+//         }
+//     }
+
+//     console.log(x);
+// }
+// removNum(3,[1,2,7,8,9,6,4,2,3]);
 
 
 
